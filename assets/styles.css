@@ -205,7 +205,7 @@ footer nav img{
         display: block;
     }
     .site-nav ul{
-        display: none;
+        display: block;
     }
     #btn-active{
         display: none;
