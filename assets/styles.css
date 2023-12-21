@@ -1,0 +1,248 @@
+:root{
+  --black: #171219;
+  --dark: #2A2308;
+  --accent: #ffe66d;
+  --accent-green: #5da271;
+  --accent-pink: #8e5572;
+  --light: #F2EDD2;  
+}
+
+
+/* fonts */
+
+h1{
+    font-size: 42px;
+    color: var(--accent-green);
+}
+h3{
+    font-size: 24px;
+}
+
+/* nav styles for all screen sizes */
+header{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+.site-nav button{
+    background: none;
+    border: none;
+    
+}
+.site-nav button img{
+    width: 75px;
+    height: 75px;
+}
+/* about me styles for all screen sizes */
+
+.about-me-container{
+    background-color: var(--black);
+    border-bottom: var(--accent-pink) solid 2px;
+    padding: 40px;
+    overflow: hidden;
+}
+#profile-pic{
+    max-width: 400px;
+}
+.about-me p{
+    max-width: 600px;
+    color: var(--light);
+    font-size: 120%;
+    margin-top: 20px;
+}
+/* projects styles for all screen sizes */
+.projects-container{
+    background-color: var(--dark);
+}
+/* contact me styles for all screen sizes */
+.contact-me-container{
+    background-color: var(--black);
+    height: 400px;
+    padding-top: 100px;
+}
+.contact-me-card{
+    display: flex;
+    background-color: var(--light);
+    width: 400px;
+    height: 200px;
+    margin: auto ;
+    justify-content: center;
+    align-items: center;
+}
+.contact-me-card div img{
+    max-width: 100px;
+}
+
+.contact-me-card section img{
+    width: 50px;
+    height: 50px;
+}
+
+.contact-me-card section{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+/* footer styles for all screen sizes */
+footer{
+    background-color: var(--black);
+}
+
+/* about me styles for desktop */
+.about-me{
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;    
+    max-width: 1400px;
+}
+.about-me section{
+    margin-top: 40px;
+}
+
+  /* nav for desktop */
+ 
+    .site-nav{
+    background-color: var(--black);
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+   }
+    .site-nav button{
+    display: none;
+   }
+   .site-nav ul{
+    display: flex;
+    border-top: var(--accent-pink) solid 5px;
+    gap: 20px;
+    
+   }
+   .site-nav li{
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    border: var(--accent-pink) solid 1px;
+   }
+
+   .site-nav a{
+    text-decoration: none;
+    color: var(--light);
+    font-size: 24px;
+   }
+   .nav-links{
+    height: 75%;
+    width: 750px;
+    margin-top: 50px;
+   }
+   
+/* project styles for desktop */
+.projects-container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 30px 0;
+}
+
+.project-card:nth-child(odd){
+    background-color: var(--accent-pink);
+}
+.project-card:nth-child(even){
+    background-color: var(--accent-green);
+}
+.project-card{
+    padding: 20px 0;
+    width: 40%; 
+    overflow: hidden;
+    border-radius: 20px;
+    border: var(--black) 1px solid;
+    margin: 30px 0;   
+}
+.project-card:nth-child(1){
+    width: 60%;
+}
+.project-card:nth-child(1) img{
+    width: 700px;
+}
+.project-card p{
+    max-width: 400px;
+    
+}
+.project{
+    text-align: center;
+}
+.project-card img{
+    max-height: 350px;
+}
+
+
+/* footer nav for desktop */
+footer{
+    padding: 25px 0  25px 40px ;
+}
+footer nav ul{
+    display: flex;
+    gap: 40px;
+
+}
+
+footer nav img{
+    width: 70px;
+    height: 70px;
+}
+
+@media only screen and (max-width: 800px) {
+    /* nav styles for tablet screen sizes */
+    .site-nav{
+        background-color: var(--dark);
+        padding: 20px;
+    }
+    .site-nav button{
+        display: block;
+    }
+    .site-nav ul{
+        display: none;
+    }
+    #btn-active{
+        display: none;
+    }
+     #btn-inactive:focus {
+        display: none;
+
+    }
+     #btn-inactive:focus + #btn-active {
+        display: block;
+    }
+
+    /* about me styles for tablet */
+    .about-me{
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+        padding:100px 30px;
+        gap: 40px;
+    }
+    #profile-pic{
+        min-width: 300px;
+    }
+ /* project styles for tablet*/
+ .project-card{
+    max-width: 100%;
+    min-width: 60%;
+ }
+   
+}
+
+@media only screen and (max-width: 390px) {
+    .contact-me-card{    
+        width: 300px;
+        height: 200px;     
+    }
+
+ 
+}
